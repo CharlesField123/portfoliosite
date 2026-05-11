@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Resume / binary assets (keep local only)
+public/*.pdf
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
