@@ -528,7 +528,7 @@ function Resume() {
           </div>
           <div className="resume-viewer glass-card">
             <iframe
-              src={resumePdf}
+              src={resumeViewerUrl}
               title="Charles Field Resume"
               className="resume-iframe"
             />
