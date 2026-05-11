@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 
+const resumePdf = import.meta.env.BASE_URL + 'CharlesField_Resume.pdf';
+
 /* ──────────────────────────────────────────────
    HOOKS
 ────────────────────────────────────────────── */
@@ -517,7 +519,7 @@ function Resume() {
           </p>
           <div className="resume-actions">
             <a
-              href="/CharlesField_Resume.pdf"
+              href={resumePdf}
               download="CharlesField_Resume.pdf"
               className="btn-primary"
             >
@@ -526,7 +528,7 @@ function Resume() {
           </div>
           <div className="resume-viewer glass-card">
             <iframe
-              src="/CharlesField_Resume.pdf"
+              src={resumePdf}
               title="Charles Field Resume"
               className="resume-iframe"
             />
