@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 
-const resumePdf = import.meta.env.BASE_URL + 'CharlesField_Resume.pdf';
+const DRIVE_FILE_ID = '1w58RuBW58A_Op0QLxObaJ7_E4qZfFV3f';
+const resumePreviewUrl = `https://drive.google.com/file/d/${DRIVE_FILE_ID}/preview`;
+const resumeDownloadUrl = `https://drive.google.com/uc?export=download&id=${DRIVE_FILE_ID}`;
 
 /* ──────────────────────────────────────────────
    HOOKS
@@ -519,8 +521,9 @@ function Resume() {
           </p>
           <div className="resume-actions">
             <a
-              href={resumePdf}
-              download="CharlesField_Resume.pdf"
+              href={resumeDownloadUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary"
             >
               ⬇ Download PDF
@@ -528,9 +531,10 @@ function Resume() {
           </div>
           <div className="resume-viewer glass-card">
             <iframe
-              src={`https://docs.google.com/viewer?url=${encodeURIComponent('https://charlesfield123.github.io/portfoliosite/CharlesField_Resume.pdf')}&embedded=true`}
+              src={resumePreviewUrl}
               title="Charles Field Resume"
               className="resume-iframe"
+              allow="autoplay"
             />
           </div>
         </div>
