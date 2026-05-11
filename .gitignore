@@ -12,7 +12,7 @@ dist
 dist-ssr
 *.local
 
-# Resume — keep private, never commit
+# Resume / binary assets (keep local only)
 public/*.pdf
 
 # Editor directories and files

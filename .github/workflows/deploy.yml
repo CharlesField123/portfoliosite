@@ -22,14 +22,6 @@ jobs:
           npm install
           npm run build
 
-      - name: Add Resume PDF to dist
-        run: |
-          curl -L \
-            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-            -H "Accept: application/octet-stream" \
-            "https://github.com/CharlesField123/portfoliosite/releases/latest/download/CharlesField_Resume.pdf" \
-            -o dist/CharlesField_Resume.pdf
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
