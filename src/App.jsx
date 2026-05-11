@@ -528,7 +528,7 @@ function Resume() {
           </div>
           <div className="resume-viewer glass-card">
             <iframe
-              src={resumeViewerUrl}
+              src={`https://docs.google.com/viewer?url=${encodeURIComponent('https://charlesfield123.github.io/portfoliosite/CharlesField_Resume.pdf')}&embedded=true`}
               title="Charles Field Resume"
               className="resume-iframe"
             />
