@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 
-const DRIVE_FILE_ID = '10PJ9h7NYdU8KcvhUlwxbVFHoowaZ6OJs';
+const DRIVE_FILE_ID = '1VPPXR4YChovZOdHAruC9l3jUWvtI7CdS';
 const resumePreviewUrl = `https://drive.google.com/file/d/${DRIVE_FILE_ID}/preview`;
 const resumeDownloadUrl = `https://drive.google.com/uc?export=download&id=${DRIVE_FILE_ID}`;
 
